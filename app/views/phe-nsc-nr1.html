@@ -1,0 +1,120 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-reviews">Reviews</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
+    </li>
+            <li class="govuk-breadcrumbs__list-item">
+      Add conditions and dates
+    </li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Conditions</h1>
+
+<div class="govuk-form-group">
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Alcohol misuse</option>
+    <option value="updated" selected>Abdominal anueotic anureism</option>
+    <option value="views">God awful disease</option>
+    <option value="comments">Hell on earth</option>
+  </select>
+</div>
+
+
+
+<h1 class="govuk-heading-xl">Start date</h1>
+
+<fieldset class="govuk-fieldset">
+  <div class="govuk-form-group">
+    <label class="govuk-label">
+      Day
+    </label>
+    <input class="govuk-input govuk-input--width-10" type="text">
+  </div>
+
+</fieldset>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label">
+      Month
+    </label>
+    <input class="govuk-input govuk-input--width-10" type="text">
+  </div>
+
+</fieldset>
+
+</fieldset>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label">
+      Year
+    </label>
+    <input class="govuk-input govuk-input--width-10" type="text">
+  </div>
+
+</fieldset>
+
+
+
+<h1 class="govuk-heading-xl">End date</h1>
+
+<fieldset class="govuk-fieldset">
+  <div class="govuk-form-group">
+    <label class="govuk-label">
+      Day
+    </label>
+    <input class="govuk-input govuk-input--width-10" type="text">
+  </div>
+
+</fieldset>
+
+</fieldset>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label">
+      Year
+    </label>
+    <input class="govuk-input govuk-input--width-10" type="text">
+  </div>
+
+</fieldset>
+
+<a href="phe-nsc-nr2"><button type="submit" class="govuk-button">
+  Save and continue
+</button></a>
+
+      <div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+
+
+
+
+
+
+
+
+        </main>
+      </div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,75 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Reviews
+    </li>
+  </ol>
+</div>
+
+
+      <div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+<h1 class="govuk-heading-xl">New review</h1>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">Upcoming</h2>
+
+        <p class="govuk-body">These reviews are coming up within the next two months or are overdue</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Amino acid metabolism disorders (2 weeks)</li>
+          <li>Galactosaemia (2 weeks)</li>
+          <li>Haemochromatosis (1 month)</li>
+        </ul>
+
+          <a href="phe-nsc-newreview"><button type="submit" class="govuk-button">
+            Start a new review
+          </button>
+      </div></a>
+    </div>
+  </main>
+
+
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">Ongoing reviews</h2>
+
+        <p class="govuk-body">These reviews are currently in process</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Genital Herpes</li>
+          <li>Hypertension (child)</li>
+          <li>Sickle Cell Disease (newborn)</li>
+        </ul>
+
+          <a href="phe-nsc-index"><button type="submit" class="govuk-button">
+            Back to dashboard
+          </button>
+      </div></a>
+    </div>
+  </main>
+
+
+
+{% endblock %}
