@@ -1,0 +1,109 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-reviews">Reviews</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
+    </li>
+            <li class="govuk-breadcrumbs__list-item">
+      Add conditions and dates
+    </li>
+  </ol>
+</div>
+
+<br>
+<div class="govuk-width-container">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">Select conditions under review
+              </h2>
+    
+
+
+
+  <div class="govuk-width-container">
+          <div class="govuk-form-group">
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="none"selected></option>
+    <option value="published">Alcohol Misuse</option>
+    <option value="updated">Abdominal Aortic Aneurysm</option>
+    <option value="views">Anaemia</option>
+    <option value="comments">Asymptomatic bacteriuria</option>
+    <option value="published">Atrial Fibrillation</option>
+    <option value="updated">Autism</option>
+    <option value="views">...</option>
+  </select>
+</div>
+
+
+<button type="submit" class="govuk-button">
+  Add another condition
+</button>
+
+<br>
+<br>
+<h2 class="govuk-heading-l">Internal review name</h2>
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-!-width-two-thirds" for="two-thirds"><span id="more-detail-hint" class="govuk-hint">
+    This will be produced automatically unless filled in specifically</span>
+  </label>
+  <input class="govuk-input govuk-!-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
+</div>
+
+<br>
+
+<br>
+
+<h2 class="govuk-heading-l">Expected consultation start</h2>
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-!-width-one-third" for="one-third">
+    <span id="more-detail-hint" class="govuk-hint">For example, April to July 2019</span>
+  </label>
+  <input class="govuk-input govuk-!-width-one-third" id="one-third" name="one-third" type="text">
+</div>
+
+
+
+
+
+<a href="phe-nsc-nr2"><button type="submit" class="govuk-button">
+  Save and continue
+</button></a>
+
+      <div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+
+
+
+
+
+
+
+
+        </main>
+      </div>
+
+
+
+
+{% endblock %}

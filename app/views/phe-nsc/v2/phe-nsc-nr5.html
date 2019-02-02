@@ -1,0 +1,203 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-reviews">Reviews</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
+    </li>
+            <li class="govuk-breadcrumbs__list-item">
+      Add conditions and dates
+    </li>
+  </ol>
+</div>
+
+<br>
+<div class="govuk-width-container">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">Upload external review document
+              </h2>
+
+              <div class="govuk-form-group">
+  <label class="govuk-label" for="file-upload-1">
+    <span id="email-hint" class="govuk-hint">Upload the external review for consultation</span>
+
+
+
+  </label>
+  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+</div>
+    
+              <h2 class="govuk-heading-l">Consultation end date
+              </h2>
+
+<p><span id="email-hint" class="govuk-hint">The consultation will be closed automatically 3 months from when it is opened unless a different date is specified</span></p>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item govuk-date-input__item--day">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">
+                Day
+              </label>
+                <input class="govuk-input govuk-date-input__input" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item govuk-date-input__item--month">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                Month
+              </label>
+                <input class="govuk-input govuk-date-input__input" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item govuk-date-input__item--year">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                Year
+              </label>
+                <input class="govuk-input govuk-date-input__input" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+<div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">NSC meeting date</h2>
+            </label>
+
+            <span id="email-hint" class="govuk-hint">
+              Select the NSC meeting date in which this consultation will be discussed
+            </span>
+
+            <div class="govuk-form-group">
+              <select class="govuk-select" id="sort" name="sort">
+                <option value="published" selected>27th September 2018</option>
+                <option value="updated">6th March 2019</option>
+              </select>
+            </div>
+          </div>
+
+
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h2 class="govuk-fieldset__heading">
+        Stakeholders
+      </h2><br>
+<span id="email-hint" class="govuk-hint">These are the stakeholders that will be notified of the consultation opening</span>
+
+
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                  The British Society for Human Genetics
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+                  Faculty of Public Health
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Muscular Dystrophy Campaign
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Royal College of General Practitioners
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Royal College of Paediatrics and Child Health
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Royal College of Physicians
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Royal College of Physicians and Surgeons of Glasgow
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Royal College of Physicians of Edinburgh
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  SMA Trust
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                  Spinal Muscular Atrophy Support UK
+                </label>
+              </div>
+            </div>
+          </div>
+        </legend>
+      </fieldset>
+    </div>
+  </label>
+</div>
+</div>
+
+
+
+
+
+      <div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+        </main>
+      </div>
+
+
+
+
+
+
+
+{% endblock %}

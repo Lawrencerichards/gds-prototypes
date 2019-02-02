@@ -1,0 +1,112 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Reviews
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Reviews</h1>
+        <h2 class="govuk-heading-l">Due to start</h2>
+        <p class="govuk-body">These reviews are scheduled to start this year, or are overdue</p>
+        
+        <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Condition</th>
+      <th class="govuk-table__header" scope="col">Due</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Autism</td>
+      <td class="govuk-table__cell">Overdue</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Galactosaemia</td>
+      <td class="govuk-table__cell">1 month</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Genital Herpes</td>
+      <td class="govuk-table__cell">2 months</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Haemochromatosis</td>
+      <td class="govuk-table__cell">6 months</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+        <a href="phe-nsc-newreview"><button type="submit" class="govuk-button">
+            Start a new review
+        </button></a>
+      </div>
+    </div>
+
+
+
+<br>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Ongoing reviews</h2>
+
+        <p class="govuk-body">These reviews are currently in process</p>
+        <br>
+
+        <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">name</th>
+      <th class="govuk-table__header" scope="col">Status</th>
+      <th class="govuk-table__header" scope="col">Conditions</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Diabetes review 2018-2019</td>
+      <td class="govuk-table__cell">Pre-Consultation</td>
+      <td class="govuk-table__cell">Diabetes</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Amino acid metabolism review 2018-2019</td>
+      <td class="govuk-table__cell">Consultation</td>
+      <td class="govuk-table__cell">Argininosuccinate lyase deficiency,
+Citrullinaemia</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+          <a href="phe-nsc-index"><button type="submit" class="govuk-button">
+            Back to dashboard
+          </button></a>
+      </div>
+    </div>
+
+
+
+
+{% endblock %}

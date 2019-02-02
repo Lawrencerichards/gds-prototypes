@@ -1,0 +1,154 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-reviews">Reviews</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
+    </li>
+            <li class="govuk-breadcrumbs__list-item">
+      Add conditions and dates
+    </li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-xl">Conditions</h1>
+
+<div class="govuk-form-group">
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Alcohol Misuse</option>
+    <option value="updated">Abdominal Aortic Aneurysm</option>
+    <option value="views" selected>Anaemia</option>
+    <option value="comments">Asymptomatic bacteriuria</option>
+    <option value="published">Atrial Fibrillation</option>
+    <option value="updated">Autism</option>
+    <option value="views">...</option>
+  </select>
+</div>
+
+<p><a href="#">Add another condition</a></p>
+
+<br>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Start Date
+            </h1>
+          </legend>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item govuk-date-input__item--day">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">
+                Day
+              </label>
+                <input class="govuk-input govuk-date-input__input" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item govuk-date-input__item--month">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                Month
+              </label>
+                <input class="govuk-input govuk-date-input__input" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item govuk-date-input__item--year">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                Year
+              </label>
+                <input class="govuk-input govuk-date-input__input" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+<br>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Expected end date
+      </h1>
+    </legend>
+    <span id="dob-hint" class="govuk-hint">
+   
+    </span>
+    <div class="govuk-date-input" id="dob">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dob-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dob-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dob-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+
+
+
+
+
+
+
+<a href="phe-nsc-nr2"><button type="submit" class="govuk-button">
+  Save and continue
+</button></a>
+
+      <div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+
+
+
+
+
+
+
+
+        </main>
+      </div>
+
+
+
+
+{% endblock %}
