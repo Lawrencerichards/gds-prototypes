@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-reviews">Reviews</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-nr5"> Dates and documents</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+        Confirm
+    </li>
+  </ol>
+</div>
+
+<br>
+<div class="govuk-width-container">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">Are you sure you want to open the consultation?
+              </h2>
+
+              <div class="govuk-form-group">
+  <label class="govuk-label" for="file-upload-1">
+    <span id="email-hint" class="govuk-hint">Opening the consultation will update the policy page and notify 10 stakeholders by email</span>
+
+
+
+          <a href="phe-nsc-reviews" role="button" class="govuk-button">Cancel</a>
+          <a href="phe-nsc-nr7" role="button" class="govuk-button">Open the consultation</a>
+
+
+        </main>
+      </div>
+
+
+
+
+
+
+
+{% endblock %}

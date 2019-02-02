@@ -21,7 +21,7 @@
       <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
     </li>
             <li class="govuk-breadcrumbs__list-item">
-      Add conditions and dates
+      Dates and documents
     </li>
   </ol>
 </div>
@@ -181,15 +181,65 @@
     </div>
   </label>
 </div>
-</div>
 
 
 
 
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h2 class="govuk-fieldset__heading">
+        Do you want to open this consultation now?
+      </h2><br>
+<span id="email-hint" class="govuk-hint">It is possible to automatically open the consultation on a later pre-determined date</span>
+</legend>
 
-      <div class="govuk-width-container">
-        
-        <main class="govuk-main-wrapper " id="main-content" role="main">
+<div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+          Yes - open this consultation now and email 10 stakeholders
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          No - open this consultation on a later pre-determined date
+        </label>
+      </div>
+
+    </div>
+
+
+    <br>
+<div class="govuk-date-input" id="dob">
+                <div class="govuk-date-input__item govuk-date-input__item--day">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-10">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item govuk-date-input__item--month">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item govuk-date-input__item--year">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
+
+          <a href="phe-nsc-reviews" role="button" class="govuk-button">Cancel</a>
+          <a href="phe-nsc-nr6" role="button" class="govuk-button">Save</a>
+
 
         </main>
       </div>

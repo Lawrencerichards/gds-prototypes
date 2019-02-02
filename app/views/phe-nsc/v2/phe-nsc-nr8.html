@@ -1,0 +1,93 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-index">Dashboard</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-reviews">Reviews</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-newreview">New review</a>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="phe-nsc-nr5"> Dates and documents</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+        Confirm
+    </li>
+  </ol>
+</div>
+
+<br>
+<div class="govuk-width-container">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">Upload evidence review summary
+              </h2>
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="file-upload-1">
+    Upload a file
+  </label>
+  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+</div>
+<br>
+
+
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">Upload one page summary
+              </h2>
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="file-upload-1">
+    Upload a file
+  </label>
+  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+</div>
+
+<br>
+
+            <label class="govuk-label" for="sort">
+              <h2 class="govuk-heading-l">Update recommendation
+              </h2>
+
+<span id="email-hint" class="govuk-hint">Update the recommendation status for this condition</span>
+
+<div class="govuk-form-group">
+
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Recommended</option>
+    <option value="updated" selected>Not recommended</option>
+  </select>
+</div>
+
+<br>
+
+<span id="email-hint" class="govuk-hint">The next review for this condition will be due to start in 2021 to 2022</span>
+
+          <a href="phe-nsc-reviews" role="button" class="govuk-button">Cancel</a>
+          <a href="phe-nsc-nr9" role="button" class="govuk-button">Save</a>
+
+
+        </main>
+      </div>
+
+
+
+
+
+
+
+{% endblock %}
